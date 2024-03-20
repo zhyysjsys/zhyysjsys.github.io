@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>张hy简历</title>
+    <style>
+        h3{
+            color:rgb(31, 102, 169);
+            background-color: blanchedalmond;
+            line-height: 40px;
+            padding-left: 10px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px #a88181;
+        }
+        .theimg{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        tr{
+            text-align: center;
+        }
+        .red{
+            color:brown;
+        }
+        img{
+            width:200px;
+            transition:1s;
+        }
+        img:hover{
+            transform:scale(1.2);
+        }
+        .container{
+            width:960px;
+            margin:0 auto;
+            background-color: rgba(162, 197, 195, 0.223);
+        }
+    
+    </style>
 </head>
 <body>
+    <div class="container">
     <h1>张hy</h1>
-    <h3>本人照片如下</h3>
-    <img src="https://img.zcool.cn/community/0144de5d5667bba80120695cf9ebf4.jpg@1280w_1l_2o_100sh.jpg" alt="" width="200px">
+    <h3>本人照片</h3>
+    <div class="theimg">
+    <img src="https://img.zcool.cn/community/01434b5da6c21da8012163ba2af9f9.jpg@1280w_1l_2o_100sh.jpg" alt="" width="200px">
+    </div>
+    <h4><a href="form.html">表单链接</a></h4>
     <br>
     <a href="https://baidu.com">去百度此人</a>
     <hr>
@@ -17,7 +56,7 @@
         <li>
             <b>性别：</b>女
         </li>
-        <li>
+        <li class="red">
             <b>电话：</b>183****1990
         </li>
         <li>
@@ -30,11 +69,11 @@
             <b>兴趣爱好：</b>
             <ul>
                 <li>阅读</li>
-                <li>写作</li>
+                <li class="red">写作</li>
             </ul>
             <b></b>
         </li>
-        <li>
+        <li class="red">
             <b>特长：</b>办公软件使用
         </li>
     </ul>
@@ -49,15 +88,16 @@
     <tr>
         <td>2022-2026</td>
         <td>SUIBE</td>
-        <td>PACC总监</td>
+        <td class="red">PACC总监</td>
     </tr>
     </table>
     <a href="https://www.suibe.edu.cn">去学校教务处查询此人</a>
     <hr>
     <h3>工作经验</h3>
-    <p>两次实习经验</p>
+    <p class="red">两次实习经验</p>
     <hr>
     <h3>自我介绍</h3>
     <p>HR好，我是zhy，欢迎下一位......</p>
+</div>
 </body>
 </html>

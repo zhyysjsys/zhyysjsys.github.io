@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <style>
+    /* 字体颜色 */
+    .white{
+        color:aliceblue;        
+    }
+    .blue{
+        color:rgb(63, 81, 219);
+    }
+    .black{
+        color:#242424;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    /* 各个板块 */
+    .container{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /* 顶部 */
+    .top{
+        background-color: rgb(66, 76, 196);
+        height: 55px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .header{
+        background-color: white;
+        margin-bottom: 10px;
+        height: 80px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /* 分割线 */
+    .divider {
+        border-top: 1px solid #635e5e56;
+        margin: 20px 0;
+    }
+    /* 主体 */
+    .main{
+        background-color:white;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    /* 第一部分——校园要闻 */
+    .large{
+        height:400px;
+        width: 600px;
+        background-color: rgba(230, 147, 92, 0.579);
+        float: left;
+        margin-bottom: 30px;
+    }
+    .small{
+        background-color: rgba(130, 252, 201, 0.476);
+        height: 400px;
+        width: 280px;
+        float:right;
+        position: relative;
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+    .large_second{
+        height:400px;
+        width: 600px;
+        background-color: rgba(230, 147, 92, 0.579);
+        float: right;
+        position: relative;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .small_second{
+        background-color: rgba(130, 252, 201, 0.476);
+        height: 400px;
+        width: 280px;
+        float:left;
+        margin-bottom: 30px;
+        margin-right: 40px;
+    }
+    /* 第二部分——新闻快讯&媒体报道 */
+    .smallheader_left{
+        background-color: white;
+        margin-bottom: 10px;
+        height: 100px;
+        width:580px ;
+        float: left;
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+    .smallheader_right{
+        background-color: white;
+        margin-bottom: 10px;
+        height: 100px;
+        width:580px ;
+        float: right;
+        position: relative;
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    .stripleft{
+        height:100px;
+        width: 580px;
+        background-color: rgba(230, 237, 148, 0.377);
+        float: left;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .stripright{
+        height:100px;
+        width: 580px;
+        background-color: rgba(230, 237, 148, 0.377);
+        float: right;
+        position: relative;
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+    }
+
+    /* 第三部分——科研动态&精彩影像&专题网站 */
+    .twosmallheader_left{
+        background-color: white;
+        margin-bottom: 20px;
+        height: 100px;
+        width:380px ;
+        float: left;
+        margin-right: 65px;
+        margin-left: 0px;
+    }
+    .twosmallheader_right{
+        background-color: white;
+        margin-bottom: 20px;
+        height: 100px;
+        width:380px;
+        float: right;
+        position: relative;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .left{
+        height:70px;
+        width: 410px;
+        background-color: rgba(237, 148, 203, 0.301);
+        float: right;
+        position:relative;
+        margin-bottom: 20px;
+    }
+    .middle{
+        height:400px;
+        width: 410px;
+        background-color: rgba(183, 215, 237, 0.377);
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .right{
+        height: 420px;
+        width: 410px;
+        background-color: rgba(162, 112, 180, 0.322);
+        float: right;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    /* 底部 */
+    .footer{
+    background-color: #bbadadcb;
+    clear: both;
+    height: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+    .footer > .container{
+    background-color: #40229c;
+    height:150px;
+    } 
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    
+<!-- 顶部 -->
+    <div class="top">
+       <p class="white" align="left"> 学生 | 教工 | 校友 | 访客 </p>
+       <p class="white" align="right">一网通办 办事大厅 邮箱 VPN English</p>
+    </div>
+    <div class="header">  
+       <h1 class="blue" align="left">上海对外经贸大学</h1>
+       <p class="black" align="right">学校概况 机构设置 师资队伍 科学研究 人才培养 招生就业 国际交流 公开事项</p>
+    </div>
+
+<!-- 分割线 -->
+    <div class="divider"></div> 
+
+    <div class="main">
+        <!-- 第一部分——校园要闻 -->
+        <div class="header">  
+            <h1 class="blue" style="text-align:center">校园要闻</h1>                                                            
+        </div>
+        <div class="container">
+            <div class="large"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+        </div>
+        <div class="container">
+           <div class="large_second"></div>
+           <div class="small_second"></div>
+           <div class="small_second"></div>
+        </div>
+        <!-- 第二部分——新闻快讯&媒体报道 -->
+        <div class="container">
+            <div class="smallheader_left">
+                <h1 class="blue" style="text-align:center">新闻快讯</h1> 
+            </div>
+            <div class="smallheader_right">
+                <h1 class="blue" style="text-align:center">媒体报道</h1> 
+            </div>
+            <div class="stripleft"></div>
+            <div class="stripright"></div>
+            <div class="stripleft"></div>
+            <div class="stripright"></div>
+            <div class="stripleft"></div>
+            <div class="stripright"></div>
+            <div class="stripleft"></div>
+            <div class="stripright"></div>
+         </div>
+         <!-- 第三部分——科研动态&精彩影像&专题网站 -->
+         <div class="container">
+            <div class="twosmallheader_left">
+                <h1 class="blue" style="text-align:center">科研动态</h1> 
+            </div>
+            <div class="twosmallheader_left">
+                <h1 class="blue" style="text-align:center">精彩影像</h1> 
+            </div>
+            <div class="twosmallheader_right">
+                <h1 class="blue" style="text-align:center">专题网站</h1> 
+            </div>
+            <div class="right"></div>
+            <div class="middle"></div>
+            <div class="left"></div>
+            <div class="left"></div>
+            <div class="left"></div>
+            <div class="left"></div>
+            <div class="left"></div>
+         </div>
+    </div>
+
+<!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <p class="white" align="left">上海对外经贸大学</p>
+            <hr>
+            <p class="white" align="left">地址：上海市松江区文翔路1900号 邮编：200235</p>
+        </div>
+    </div>
+</body>
+</html>

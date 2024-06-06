@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Example2</title>
+    <link rel="stylesheet" href="stylestwo.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="nav-item" data-section="home">首页</div>
+        
+        <div class="nav-item" data-section="noodles">米粉&面</div>
+        <div class="nav-item" data-section="japanese-korean">日韩料理</div>
+        <div class="nav-item" data-section="fast-food">快餐</div>
+        <div class="nav-item" data-section="dumplings">水饺馄饨</div>
+        <div class="nav-item" data-section="banquet">聚餐类型</div>
+    </div>
+    <div class="container">
+        <div class="side-nav" id="side-nav">
+            <!-- 左侧导航栏内容将通过JS动态生成 -->
+        </div>
+        <div class="content" id="content">
+            <!-- 右侧具体内容将通过JS动态生成 -->
+            <img class="img-active" src="https://img.51miz.com/Element/00/83/91/92/3fd6d0c5_E839192_c8bfd8a0.png">
+            <h2>欢迎您！请选择一个项目以显示详细内容。</h2>
+        </div>
+    </div>
+    <script src="scripttwo.js"></script>
+</body>
+</html>

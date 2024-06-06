@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>图片轮播</title>  
+    <style>  
+        #carousel {  
+            width: 500px;  
+            height: 300px;  
+            position: relative;  
+            margin: 50px auto;  
+        }  
+        #carousel img {  
+            width: 100%;  
+            height: 100%;  
+            object-fit: cover;  
+        }  
+        .dot {  
+            cursor: pointer;  
+            height: 15px;  
+            width: 15px;  
+            margin: 0 5px;  
+            background-color: #bbb;  
+            border-radius: 50%;  
+            display: inline-block;  
+            transition: background-color 0.6s ease;  
+        }  
+        .active.dot:hover {  
+            background-color: #717171;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div id="carousel">  
+        <img id="carouselImage" src="111..jpg" alt="Image 1">  
+        <div id="dots">  
+            <span class="dot" onclick="changeImage(0)"></span>  
+            <span class="dot" onclick="changeImage(1)"></span>  
+            <span class="dot" onclick="changeImage(2)"></span>  
+        </div>  
+    </div>  
+  
+    <script>  
+        var images = ["11.jpg", "22.jpg", "33.jpg"];  
+        var currentIndex = 0;  
+        var dots = document.querySelectorAll(".dot");  
+        var carouselImage = document.getElementById("carouselImage");  
+        var intervalId;  
+  
+        function changeImage(index) {  
+            currentIndex = index;  
+            carouselImage.src = images[currentIndex];  
+            highlightDot();  
+        }  
+  
+        function highlightDot() {  
+            dots.forEach((dot, index) => {  
+                dot.classList.remove("active");  
+                if (index === currentIndex) {  
+                    dot.classList.add("active");  
+                }  
+            });  
+        }  
+  
+        function startCarousel() {  
+            intervalId = setInterval(() => {  
+                currentIndex = (currentIndex + 1) % images.length;  
+                changeImage(currentIndex);  
+            }, 2000); 
+        }  
+        highlightDot();  
+        startCarousel();  
+    </script>  
+</body>  
+</html>
